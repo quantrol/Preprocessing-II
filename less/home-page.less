@@ -20,6 +20,7 @@
       img {
         border-radius: 10px;
       }
+      
     }
   }
 
@@ -48,6 +49,7 @@
   }
 
   .content-pick {
+    
     padding-top: 30px;
     border-top: 2px dashed @navigation-border;
     display: flex;
@@ -57,5 +59,38 @@
       width: 30%;
       margin-bottom: 30px;
     }
+    header{
+      margin: 0 auto;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    nav {
+     
+      a{
+        max-width: 100%;
+        display: block;
+        background-color: @main-colour;
+        
+        cursor: pointer;
+        width: 200px;
+        height: 45px;
+        font-size: 2rem;
+        border-radius: 10px;
+        text-align: center;
+        &:hover{
+          background-color: @accent-colour;
+         color:black; 
+        }//hoverFunction
+      }//aTag
   }
+    
+  }
+  header{
+    padding: 5%;
+    margin-top: 40px; 
+    width: 100%;
+   justify-content: space-between;
+   
+}
 }// home
